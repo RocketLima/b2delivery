@@ -1,0 +1,175 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+    background: linear-gradient to right, #6a11cb, #2575fc; /* Gradiente de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    margin: 0;
+    color: #333;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px; /* Bordes más suaves */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    width: 380px; /* Ancho fijo */
+    text-align: center;
+    transform: translateY(-20px); /* Un pequeño levantamiento inicial */
+    animation: fadeIn 0.8s ease-out forwards; /* Animación de aparición */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #1a237e; /* Azul oscuro para el título */
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: calc(100% - 24px); /* Ajuste para padding */
+    padding: 12px;
+    border: 1px solid #c0c0c0;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Sombra al enfocar */
+    outline: none; /* Quita el contorno por defecto del navegador */
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Pequeño efecto al pasar el mouse */
+}
+
+button[type="submit"]:active {
+    transform: translateY(0); /* Efecto al hacer click */
+}
+
+.error-message {
+    color: #d32f2f; /* Rojo de error */
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+p {
+    margin-top: 25px;
+    color: #666;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
+/* Estilos adicionales para el botón de Google */
+        .social-login-buttons {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column; /* Apila los botones si hay más de uno */
+            gap: 10px; /* Espacio entre botones */
+        }
+        .social-login-buttons button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* Espacio entre ícono y texto */
+            transition: opacity 0.2s ease;
+        }
+        .social-login-buttons button:hover {
+            opacity: 0.9;
+        }
+        .social-login-buttons button img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .google-btn {
+            background-color: #db4437; /* Color de Google */
+            color: white;
+        }
+        /* Si solo tienes Google, podrías omitir .social-login-buttons y aplicarlo directamente a .google-btn */
+    
+
+    /* Estilos adicionales para el logo y los nuevos campos */
+        .logo-container {
+            text-align: center; /* Centra el logo */
+            margin-bottom: 20px; /* Espacio debajo del logo */
+        }
+
+        .logo-container img {
+            max-width: 40px; /* Ajusta el tamaño máximo del logo */
+            height: auto;
+        }
+
+        .input-group {
+            margin-bottom: 10px; /* Espacio entre los campos */
+        }
+
+        .select-group {
+            margin-bottom: 10px;
+        }
+
+        .select-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
